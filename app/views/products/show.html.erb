@@ -1,0 +1,15 @@
+<div class="pb-left-column col-xs-12 col-sm-12 col-md-4"">
+    <div class="row">
+      <div class="col-sm-6 col-sm-12">
+        <h2><%= @product.title %></h2>
+        <h3> Descripcion: <%= @product.description %></h3>
+        <h4>Precio: <%= @product.price %></h4>
+      </div>
+      <div class="col-sm-6">
+        <%= link_to 'Edit', edit_product_path(@product) , class: "btn btn-link" %> |
+		<%= link_to 'Back', products_path , class: "btn btn-link" %>
+      </div>
+    </div>
+</div>
+
+
