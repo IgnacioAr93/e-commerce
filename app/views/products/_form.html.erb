@@ -12,19 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :titulo %>
-    <%= form.text_field :title, id: :product_title %>
+    <%= form.label :category_id %>
+    <%= form.text_field :category_id, id: :product_category_id %>
   </div>
-    <div class="field">
-    <%= form.label :Descripcion %>
-    <%= form.text_area :description, id: :product_description %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :product_name %>
   </div>
-    <div class="field">
-    <%= form.label :Precio %>
-    <%= form.text_field :price, id: :product_price %>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, id: :product_description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, id: :product_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :stock %>
+    <%= form.number_field :stock, id: :product_stock %>
   </div>
 
   <div class="actions">
-    <%= form.submit "Actualizar" , class: "btn btn-info" %>
+    <%= form.submit %>
   </div>
 <% end %>

@@ -1,15 +1,29 @@
-<div class="pb-left-column col-xs-12 col-sm-12 col-md-4"">
-    <div class="row">
-      <div class="col-sm-6 col-sm-12">
-        <h2><%= @product.title %></h2>
-        <h3> Descripcion: <%= @product.description %></h3>
-        <h4>Precio: <%= @product.price %></h4>
-      </div>
-      <div class="col-sm-6">
-        <%= link_to 'Edit', edit_product_path(@product) , class: "btn btn-link" %> |
-		<%= link_to 'Back', products_path , class: "btn btn-link" %>
-      </div>
-    </div>
-</div>
+<p id="notice"><%= notice %></p>
 
+<p>
+  <strong>Category:</strong>
+  <%= @product.category %>
+</p>
 
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @product.price %>
+</p>
+
+<p>
+  <strong>Stock:</strong>
+  <%= @product.stock %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
